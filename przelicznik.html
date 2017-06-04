@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Przelicznik krwiodawcy</title>
+  <meta name="Bootstrap" content="Szkolenie z HTML, CSS, Angulara i innych technologii.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries-geometry"></script>
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Prata" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/przelicznik.css">
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="navbar navbar-default">
+    <h2>Warto oddawać!</h2>
+    <h3><a href=http://www.rckik-warszawa.com.pl>Dowiedz się więcej<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></h3>
+    </ul>
+  </div>
+    <div class="parallax parallax1">
+      <p id="textline">Pamiętasz, ile razy zdażyło Ci się być honorowym krwiodawcą? Wpisz liczbę donacji i sprawdź, ile litrów krwi już "przelałeś" w słusznym celu :</p>
+    <input type='number' id="inpoot">
+    <button id="check">Przelicz!</button>
+    <p id="outpoot"></p>
+    </div>
+    <div class="parallax text1">
+<p>Tytuł <strong>"Zasłużony Honorowy Dawca Krwi III stopnia"</strong> i brązowa odznaka honorowa <strong>"Zasłużony Honorowy Dawca Krwi III"</strong> stopnia przysługują:
+kobiecie, która oddała w dowolnym okresie co najmniej 5 litrów krwi lub odpowiadającą tej objętości ilość jej składników,
+mężczyźnie, który oddał w dowolnym okresie co najmniej 6 litrów krwi lub odpowiadającą tej objętości ilość jej składników.</p>
+<p>Tytuł <strong>"Zasłużony Honorowy Dawca Krwi II stopnia"</strong> i srebrna odznaka honorowa <strong>"Zasłużony Honorowy Dawca Krwi II stopnia"</strong>, przysługują:
+ kobiecie, która oddała w dowolnym okresie co najmniej 10 litrów krwi lub odpowiadającą tej objętości ilość jej składników,
+mężczyźnie, który oddał w dowolnym okresie co najmniej 12 litrów krwi lub odpowiadającą tej objętości ilość jej składników.</p>
+<p>Tytuł <strong>"Zasłużony Honorowy Dawca Krwi I stopnia"<strong> i złota odznaka honorowa <strong>"Zasłużony Honorowy Dawca Krwi I stopnia"</strong> przysługują:
+kobiecie, która oddała w dowolnym okresie co najmniej 15 litrów krwi lub odpowiadającą tej objętości ilość jej składników,
+mężczyźnie, który oddał w dowolnym okresie co najmniej 18 litrów krwi lub odpowiadającą tej objętości ilość jej składników.
+</p>
+    </div>
+    <div class="parallax parallax2"></div>
+    <div class="parallax text2">
+        <p></p>
+    </div>
+    <div class="parallax parallax3">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-xs-12">
+                <p id="rckik">Sprawdź, gdzie oddasz krew w Warszawie!</p>
+                  <div id="googleMap"></div>
+                  <div class="infoMap">
+                      <span class="name">Twoja obecna lokalizacja</span>
+                  </div>
+                  <div class="infoMap2">
+                      <span class="name">Regionalne Centrum Krwiodawstwa
+      i Krwiolecznictwa w Warszawie</span>
+                      <span class="adress">ul. Saska 63/75</span>
+                  </div>
+                  <div class="infoMap3">
+                      <span class="name">Oddział Terenowy Nr 16 RCKiK w Warszawie</span>
+                      <span class="adress">ul. Cegłowska 80</span>
+                  </div>
+                  <div class="infoMap4">
+                      <span class="name">Oddział Terenowy Nr 12 RCKiK w Warszawie</span>
+                      <span class="adress">ul. Nowogrodzka 59</span>
+                  </div>
+                  <div class="infoMap5">
+                      <span class="name">Oddział Terenowy Nr 27 RCKiK w Warszawie</span>
+                      <span class="adress">Al. Dzieci Polskich 20</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="parallax text3">
+        Ogólnie znana teza głosi, iż użytkownika może rozpraszać zrozumiała zawartość strony, kiedy ten chce zobaczyć sam jej wygląd. Jedną z mocnych stron używania Lorem Ipsum jest to, że ma wiele różnych „kombinacji” zdań, słów i akapitów, w przeciwieństwie do zwykłego: „tekst, tekst, tekst”, sprawiającego, że wygląda to „zbyt czytelnie” po polsku. Wielu webmasterów i designerów używa Lorem Ipsum jako domyślnego modelu tekstu i wpisanie w internetowej wyszukiwarce ‘lorem ipsum’ spowoduje znalezienie bardzo wielu stron, które wciąż są w budowie. Wiele wersji tekstu ewoluowało i zmieniało się przez lata, czasem przez przypadek, czasem specjalnie (humorystyczne wstawki itd).
+    </div>
+  <script src="przelicznik.js"></script>
+</body>
+</html>
