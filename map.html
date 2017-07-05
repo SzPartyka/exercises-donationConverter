@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mapa warszawskich RCKiK</title>
+  <meta name="Blood donor center's map" content="Map of main blood donor centers in Warsaw">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries-geometry"></script>
+ <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/map.css">
+
+</head>
+<body>
+  <div class="headline">
+        <h2 class="headline_h2">Tam oddasz</h2>
+    <h3 class="headline_h3"><a href=./przelicznik.html><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span>Powrót do strony z przelicznikiem</a></h3>
+    <h3 class="headline_h3"><a href=http://www.rckik-warszawa.com.pl>Strona Regionalnego Centrum Krwiodawstwa<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></h3>
+  </div>
+    <div class="mapbox">
+                <p id="rckik">Sprawdź, gdzie będzie Ci najbliżej! Najedź na czerwony marker i poznaj dokładny adres oddziału RCKiK.</p>
+                  <div id="googleMap"></div>
+                  <div class="infoMap">
+                      <span class="name">Twoja obecna lokalizacja</span>
+                  </div>
+                  <div class="infoMap2">
+                      <span class="name">Regionalne Centrum Krwiodawstwa
+      i Krwiolecznictwa w Warszawie</span>
+                      <span class="adress">ul. Saska 63/75</span>
+                  </div>
+                  <div class="infoMap3">
+                      <span class="name">Oddział Terenowy Nr 16 RCKiK w Warszawie</span>
+                      <span class="adress">ul. Cegłowska 80</span>
+                  </div>
+                  <div class="infoMap4">
+                      <span class="name">Oddział Terenowy Nr 12 RCKiK w Warszawie</span>
+                      <span class="adress">ul. Nowogrodzka 59</span>
+                  </div>
+                  <div class="infoMap5">
+                      <span class="name">Oddział Terenowy Nr 27 RCKiK w Warszawie</span>
+                      <span class="adress">Al. Dzieci Polskich 20</span>
+                  </div>
+              </div>
+  <script src="map.js"></script>
+</body>
+</html>

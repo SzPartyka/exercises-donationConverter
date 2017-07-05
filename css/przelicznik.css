@@ -1,115 +1,98 @@
 body {
-  background-color: red; }
-  body .navbar {
-    background: linear-gradient(269deg, #ff2929, #ffffff, #ff3131);
-    background-size: 600% 600%;
-    -webkit-animation: AnimationName 13s ease infinite;
-    -moz-animation: AnimationName 13s ease infinite;
-    -o-animation: AnimationName 13s ease infinite;
-    animation: AnimationName 13s ease infinite;
-    text-align: center; }
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0 50%; }
-  50% {
-    background-position: 100% 51%; }
-  100% {
-    background-position: 0 50%; } }
-@-moz-keyframes AnimationName {
-  0% {
-    background-position: 0 50%; }
-  50% {
-    background-position: 100% 51%; }
-  100% {
-    background-position: 0 50%; } }
-@-o-keyframes AnimationName {
-  0% {
-    background-position: 0 50%; }
-  50% {
-    background-position: 100% 51%; }
-  100% {
-    background-position: 0 50%; } }
-@keyframes AnimationName {
-  0% {
-    background-position: 0 50%; }
-  50% {
-    background-position: 100% 51%; }
-  100% {
-    background-position: 0 50%; } }
-    body .navbar h2 {
+  background: url("bground.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: red;
+  background-blend-mode: lighten;
+  font-family: 'Oswald';
+  text-align: center; }
+  body .headline {
+    margin-bottom: 50px; }
+    body .headline_h2 {
+      color: black;
+      font-family: 'Pacifico';
+      font-size: 8em;
+      text-shadow: -.2em 0.2em red; }
+    body .headline_h3 {
       margin: auto;
-      display: inline-block; }
-    body .navbar h3 {
-      margin: auto;
-      float: right; }
-  body .parallax {
-    background-attachment: fixed;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat; }
-    body .parallax.parallax1 {
-      background-image: url(blood1.jpg);
-      text-align: center; }
-      body .parallax.parallax1 #textline, body .parallax.parallax1 #outpoot {
-        font-family: 'Prata', serif;
-        padding: 50px;
-        font-size: 30;
-        color: white; }
-    body .parallax.parallax2 {
-      background-image: url(blood2.jpg); }
-    body .parallax.parallax3 {
-      background-image: url(blood3.png);
+      display: inline-block;
+      font-size: 1,5em;
+      margin: 0 30; }
+  body .box {
+    margin-bottom: 50px; }
+    body .box_p {
+      font-size: 2em; }
+    body .box_ipt {
+      height: 60px;
+      margin-bottom: 60px; }
+      body .box_ipt_ipt_wndw {
+        width: 100px;
+        height: 50px; }
+      body .box_ipt_btn {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: rgba(255, 99, 0, 0.8);
+        font-family: 'Pacifico';
+        font-size: 1.5em; }
+  body .scorebox {
+    display: none;
+    position: relative;
+    border-bottom: 1px solid black;
+    padding: 0 0 10px;
+    width: 41,5em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.59); }
+    body .scorebox_p {
+      font-size: 1.5em; }
+    body .scorebox:after, body .scorebox:before {
+      border-top: 1px solid black;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 45em; }
+    body .scorebox:before {
+      left: 0; }
+    body .scorebox:after {
+      right: 0; }
+    body .scorebox_h3 {
+      color: black;
+      line-height: 1.5;
+      margin: 0 0 0.45em; }
+    body .scorebox_img {
+      margin: -1em 0 0;
+      width: 1.5em;
       height: auto; }
-      body .parallax.parallax3 #rckik {
-        font-size: 20;
-        text-align: center; }
-      body .parallax.parallax3 #googleMap {
-        height: 500px; }
-      body .parallax.parallax3 .infoMap, body .parallax.parallax3 .infoMap2, body .parallax.parallax3 .infoMap3, body .parallax.parallax3 .infoMap4, body .parallax.parallax3 .infoMap5 {
-        display: none;
-        border: 3px solid black;
-        padding: 10px;
-        z-index: 100;
-        position: absolute;
-        bottom: 250px;
-        left: 600px;
-        background-color: aliceblue; }
-      body .parallax.parallax3 .infoMap span {
-        display: block; }
-      body .parallax.parallax3 .infoMap span.title {
-        font-weight: bold; }
-    body .parallax.text1 {
-      height: auto;
-      background-color: inherit;
-      font-family: 'Prata', serif;
-      padding: 50px;
-      font-size: 20;
-      color: white; }
-    body .parallax.text2 {
-      text-align: center;
-      height: 200px;
-      background-color: beige;
-      display: none; }
-      body .parallax.text2 a.box {
-        position: relative;
-        display: inline-block;
-        margin: 40px 0 40px 0;
-        border: 4px solid gray;
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        background-color: coral; }
-        body .parallax.text2 a.box.hover {
-          border: 4px solid blue; }
-        body .parallax.text2 a.box .glyphicon {
-          font-size: 50px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%); }
-    body .parallax.text3 {
-      height: 200px;
-      background-color: beige;
-      display: none; }
+  body .textbox {
+    display: none;
+    position: relative;
+    border-bottom: 1px solid black;
+    padding: 0 0 10px;
+    width: 41,5em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.59);
+    margin-bottom: 50px; }
+    body .textbox_p, body .textbox_p2 {
+      font-size: 1.5em; }
+    body .textbox:after, body .textbox:before {
+      border-top: 1px solid black;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 45em; }
+    body .textbox:before {
+      left: 0; }
+    body .textbox:after {
+      right: 0; }
+    body .textbox_h3 {
+      color: black;
+      line-height: 1.5;
+      margin: 0 0 0.45em; }
+    body .textbox_img {
+      margin: -1em 0 0;
+      width: 1.5em;
+      height: auto; }
 
 /*# sourceMappingURL=przelicznik.css.map */

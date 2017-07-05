@@ -1,160 +1,144 @@
 body {
+  background: url("bground.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-color: red;
-  .navbar {
-    background: linear-gradient(269deg, #ff2929, #ffffff, #ff3131);
-    background-size: 600% 600%;
-    -webkit-animation: AnimationName 13s ease infinite;
-    -moz-animation: AnimationName 13s ease infinite;
-    -o-animation: AnimationName 13s ease infinite;
-    animation: AnimationName 13s ease infinite;
-    @-webkit-keyframes AnimationName {
-      0% {
-        background-position: 0 50%;
-      }
+  background-blend-mode: lighten;
+  font-family: 'Oswald';
+  text-align: center;
 
-      50% {
-        background-position: 100% 51%;
-      }
+  .headline {
+    margin-bottom: 50px;
 
-      100% {
-        background-position: 0 50%;
-      }
-    }
-    @-moz-keyframes AnimationName {
-      0% {
-        background-position: 0 50%;
-      }
-
-      50% {
-        background-position: 100% 51%;
-      }
-
-      100% {
-        background-position: 0 50%;
-      }
-    }
-    @-o-keyframes AnimationName {
-      0% {
-        background-position: 0 50%;
-      }
-
-      50% {
-        background-position: 100% 51%;
-      }
-
-      100% {
-        background-position: 0 50%;
-      }
-    }
-    @keyframes AnimationName {
-      0% {
-        background-position: 0 50%;
-      }
-
-      50% {
-        background-position: 100% 51%;
-      }
-
-      100% {
-        background-position: 0 50%;
-      }
-    }
-    text-align: center;
-
-    h2 {
-margin: auto;
-display: inline-block;
+    &_h2 {
+      color: black;
+      font-family: 'Pacifico';
+      font-size: 8em;
+      text-shadow: -.2em 0.2em red;
     }
 
-    h3 {
+    &_h3 {
       margin: auto;
-
-    float: right;
+      display: inline-block;
+      font-size: 1,5em;
+      margin: 0 30;
     }
-  };
+  }
 
-    .parallax {
-        background-attachment: fixed;
-        height: 500px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        &.parallax1 {
-            background-image: url(blood1.jpg);
-              text-align: center;
-#textline, #outpoot {
-font-family: 'Prata', serif;
-padding: 50px;
-  font-size: 30;
-  color: white;
+  .box {
+    margin-bottom: 50px;
+
+    &_p {
+      font-size: 2em;
+    }
+
+    &_ipt {
+      height: 60px;
+      margin-bottom: 60px;
+
+      &_ipt_wndw {
+        width: 100px;
+        height: 50px;
+      }
+
+      &_btn {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: rgba(255, 99, 0, 0.8);
+        font-family: 'Pacifico';
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .scorebox {
+    display: none;
+      position: relative;
+      border-bottom: 1px solid black;
+      padding: 0 0 10px;
+      width: 41,5em;
+      text-align: center;
+    background-color: rgba(255, 255, 255, 0.59);
+
+&_p {
+        font-size: 1.5em;
 }
-        }
-        &.parallax2 {
-            background-image: url(blood2.jpg);
 
-        }
-        &.parallax3 {
-            background-image: url(blood3.png);
-            height: auto;
-            #rckik {
-              font-size: 20;
-              text-align: center;
-            }
-            #googleMap {
-              height: 500px; }
+      &:after,
+      &:before {
+        border-top: 1px solid black;
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 45em;
+      }
 
-            .infoMap, .infoMap2, .infoMap3, .infoMap4, .infoMap5 {
-              display: none;
-              border: 3px solid black;
-              padding: 10px;
-              z-index: 100;
-              position: absolute;
-              bottom: 250px;
-              left: 600px;
-              background-color: aliceblue;
-            }
-              .infoMap span {
-                display: block; }
-                .infoMap span.title {
-                  font-weight: bold; }
-        }
-        &.text1 {
-            height: auto;
-            background-color: inherit;
-            font-family: 'Prata', serif;
-            padding: 50px;
-              font-size: 20;
-              color: white;
-        }
-        &.text2 {
-            text-align: center;
-            height: 200px;
-            background-color: beige;
-            display: none;
-            a.box {
-                position: relative;
-                display: inline-block;
-                margin: 40px 0 40px 0;
-                border: 4px solid gray;
-                width: 180px;
-                height: 180px;
-                border-radius: 50%;
-                background-color: coral;
-                &.hover {
-                    border: 4px solid blue;
-                }
-                .glyphicon {
-                    font-size: 50px;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-        }
-        &.text3 {
-            height: 200px;
-            background-color: beige;
-            display: none;
-        }
+      &:before {
+        left: 0;
+      }
+
+      &:after {
+        right: 0;
+      }
+
+      &_h3 {
+        color: black;
+        line-height: 1.5;
+        margin: 0 0 0.45em;
+      }
+
+      &_img {
+        margin: -1em 0 0;
+        width: 1.5em;
+        height: auto;
+      }
     }
+
+  .textbox {
+    display: none;
+    position: relative;
+    border-bottom: 1px solid black;
+    padding: 0 0 10px;
+    width: 41,5em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.59);
+    margin-bottom: 50px;
+
+    &_p,
+    &_p2 {
+            font-size: 1.5em;
+    }
+
+    &:after,
+    &:before {
+      border-top: 1px solid black;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 45em;
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+
+    &_h3 {
+      color: black;
+      line-height: 1.5;
+      margin: 0 0 0.45em;
+    }
+
+    &_img {
+      margin: -1em 0 0;
+      width: 1.5em;
+      height: auto;
+    }
+  }
 }

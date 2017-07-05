@@ -1,0 +1,70 @@
+body {
+  background: url("bground.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: red;
+  background-blend-mode: lighten;
+  font-family: 'Oswald';
+  text-align: center;
+
+  .headline {
+    margin-bottom: 50px;
+
+    &_h2 {
+      color: black;
+      font-family: 'Pacifico';
+      font-size: 8em;
+      text-shadow: -.2em 0.2em red;
+    }
+
+    &_h3 {
+      margin: auto;
+      display: inline-block;
+      font-size: 1,5em;
+      margin: 0 30;
+    }
+  }
+
+  .mapbox {
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    height: auto;
+
+    #rckik {
+      font-size: 3em;
+      text-align: center;
+    }
+
+    #googleMap {
+      height: 500px;
+    }
+
+    .infoMap,
+    .infoMap2,
+    .infoMap3,
+    .infoMap4,
+    .infoMap5 {
+      display: none;
+      border: 3px solid black;
+      padding: 10px;
+      z-index: 100;
+      position: absolute;
+      bottom: 250px;
+      left: 600px;
+      background-color: aliceblue;
+    }
+
+    .infoMap span {
+      display: block;
+    }
+
+    .infoMap span.title {
+      font-weight: bold;
+    }
+  }
+}
